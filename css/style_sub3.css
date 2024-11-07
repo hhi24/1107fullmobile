@@ -1,0 +1,327 @@
+/* ===== 기본 ===== */
+
+* {padding: 0; margin: 0;}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Pretendard-Regular', sans-serif;
+    color: #1F2B6C;
+}
+
+
+a {text-decoration: none; color: inherit;}
+ul {list-style: none;}
+
+/* ===== Type 설정 ===== */
+    h1 {
+        font-size: 36px;
+        font-weight: 900;
+    }
+
+
+    h2 {
+        /* 부제목 */
+        font-size: 32px;
+        font-weight: 600;
+
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    h3 {
+        /* 부제목 위에 영어 */
+        color: #159EEC;
+        font-family: inherit;
+        font-size: 18px;
+        font-weight: 500;
+        font-style: italic;
+
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: capitalize;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+/* ===== top_m ===== */
+
+
+#bg_top_m {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 1350px;
+    height: 75px;
+    background-color: #1F2B6C;
+}
+
+#top_m {
+    box-sizing: border-box;
+    width: 1350px;
+    margin: 0 auto;
+
+    color: #FFFFFF;
+}
+
+
+.navi h1 {
+    float: left;
+}
+
+.navi h1>a {
+    display: block;
+    box-sizing: border-box;
+    width: 220px;
+    height: 75px;
+    padding-top: 10px;
+}
+
+.navi dl {
+    float: right;
+    box-sizing: border-box;
+    width: 900px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.navi dl dt>a {
+    box-sizing: border-box;
+    display: block;
+    width: 160px;
+    height: 75px;
+
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.navi dl dt>a:hover, .navi dl dt:nth-child(4) {
+    color: #F4D35E;
+}
+
+
+/* ========== disease ========== */
+.bg_submenu {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 1350px;
+    height: 60px;
+
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+
+    background-color: rgba(191,210,248,0.7);
+}
+
+.submenu {
+    box-sizing: border-box;
+    width: 1350px;
+    margin: 0 auto;
+
+    color: #1F2B6C;
+}
+
+.submenu ul {
+    text-align: right;
+}
+.submenu ul li {
+    display: inline-block;
+}
+.submenu ul li a {
+    box-sizing: border-box;
+    display: block;
+    width: 160px;
+    height: 60px;
+
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 17px;
+}
+
+.submenu ul li:hover {
+    color: #FF6F61;
+}
+
+
+/* ========== board ========== */
+
+.board {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.board li {
+    width: 300px;
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+    /* board 이미지 */
+    .board li:nth-child(1) {background-image: url(../img/ds_headache3.png);}
+    .board li:nth-child(2) {background-image: url(../img/ds_dizziness4.png);}
+    .board li:nth-child(3) {background-image: url(../img/ds_sleep5.png);}
+    .board li:nth-child(4) {background-image: url(../img/ds_sleep3.png);}
+    .board li:nth-child(5) {background-image: url(../img/ds_stroke5.png);}
+    .board li:nth-child(6) {background-image: url(../img/ds_pain3.png);}
+
+
+.board li a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(255, 255, 255, 0.1);
+
+    color: #222222;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: right;
+
+    padding-top: 270px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.board li:nth-child(2) a {color: #FFFFFF;}
+.board li:nth-child(3) a {color: #FFFFFF;}
+
+/* bn 호버 */
+
+.board li {position: relative;}
+
+.bn_txt {
+    position:absolute;
+    top:50%;
+    left:0;
+    transform:translateY(-50%);
+    display:none;
+    width:100%;
+    font-size:30px;
+    color:#FFFFFF;
+    font-weight:900;
+    letter-spacing: 4px;
+    text-align:center;
+}
+
+.bn::before, .bn::after{
+	content:' ';
+	position:absolute;
+	top:50%;
+	left:50%;
+	width:95%;
+	height:95%;
+	transform:translate(-50%,-50%);
+	transition:all 0.5s;}
+
+.bn::before {
+    border-top:2px solid #FFFFFF;
+    border-bottom:2px solid #FFFFFF;
+    width:0;
+}
+.bn::after {
+    border-left:2px solid #FFFFFF;
+    border-right:2px solid #FFFFFF;
+    height:0;
+}
+
+.bn:hover {
+    color: rgba(255, 255, 255, 0) !important;
+    background-color: rgba(31,43,108,0.7);
+}
+.bn:hover .bn_txt {display: block;}
+.bn:hover::before{width:95%;}
+.bn:hover::after{height:95%;}
+
+
+
+
+/* ========== section 구획 ========== */
+.bg_sec {
+    min-width: 1350px;
+}
+
+.sec {
+    box-sizing: border-box;
+    width: 1350px;
+    margin: 0 auto;
+    height: 800px;
+    padding: 60px 40px;
+}
+
+
+
+/* ===== footer ===== */
+
+.bg_footer {
+    width: 100%;
+
+    background-color: #222222;
+    color: #FFFFFF;
+}
+
+#footer {
+    box-sizing: border-box;
+    width: 1350px;
+    margin: 0 auto;
+    height: 250px;
+
+    padding: 40px 0;
+    text-align: center;
+
+    opacity: 80%;
+}
+
+.foot_logo {
+    width: 150px;
+}
+
+#footmn {
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    padding-left: 20px;
+
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#footmn li {
+    font-size: 15px;
+    font-weight: 500;
+}
+    #footmn li:hover {font-weight: 900;}
+
+    #footmn li::after {
+        content: "|";
+        display: inline-block;
+        margin: 0 20px;
+    }
+    #footmn li:last-child::after {
+        content: ""; /* 마지막 항목 뒤에는 선을 표시하지 않음 */
+        margin: 0;
+    }
+
+#footer h5 {
+    font-size: 15px;
+    font-weight: 300;
+
+    margin-top: 10px;
+}
+

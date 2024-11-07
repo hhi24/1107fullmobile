@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1350", initial-scale=1.0">
+    <title>해든 신경과</title>
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../css/style_sub4.css">
+
+    <!-- AOS -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ===== top_s 스크롤고정 ===== -->
+<div id="bg_top_s">
+    <div id="top_s" class="navi">
+        <h1><a href="../index.html"><img src="../img/logo_nanumgothic_n.png" alt="logo_n"></a></h1>
+        <dl>
+            <dt><a href="../index.html">HOME</a></dt>
+            <dt><a href="./sub1_hospital.html">병원 소개</a></dt>
+            <dt><a href="./sub2_doctors.html">의료진 소개</a></dt>
+            <dt><a href="./sub3_diseases.html">질환 정보</a></dt>
+            <dt><a href="./sub4_contact.html">오시는 길</a></dt>
+        </dl>
+    </div>
+</div>
+
+<!-- ===== sub_title ===== -->
+
+<div class="bg_sub_title">
+    <div id="sub_title">
+        <h5>Haedeun Neuro Clinic</h5>
+        <h1>오시는 길</h1>
+    </div>
+</div>      
+
+
+<!-- ===== sec1 ===== -->
+
+<div class="bg_sec">
+    <div id="sec1" class="sec">
+        <h3>Way To Haedeun</h3>
+        <h2>오시는 길</h2>
+
+        <!-- * 카카오맵 - 지도퍼가기 -->
+        <!-- 1. 지도 노드 -->
+        <div id="daumRoughmapContainer1730945518041" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+        <!--
+            2. 설치 스크립트
+            * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+        -->
+        <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+        <!-- 3. 실행 스크립트 -->
+        <script charset="UTF-8">
+            new daum.roughmap.Lander({
+                "timestamp" : "1730945518041",
+                "key" : "2m65j",
+                "mapWidth" : "50%",
+                "mapHeight" : "450"
+            }).render();
+        </script>
+
+        <div class="right">
+            <h4>해든 신경과 의원 찾아가는 길</h4>
+            <p>
+                분당역 대신빌딩 2층에 위치하고 있습니다.
+                <br>지하철 이용시 분당역 3번 출구에서 왼쪽으로 200m 가셔서,
+                <br>파리바게트가 있는 건물 2층으로 오시면 됩니다.
+                <br>차량 이용시 건물 내부 지하 주차장 이용해주세요.
+            </p>
+
+            <h5>주소</h5>
+            <p>경기도 성남시 분당구 미금로 220, 대신빌딩 2층</p>
+            <h5>Tel.</h5>
+            <p>031-157-1187</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- ===== sec4 ===== -->
+
+<div class="bg_sec">
+    <div id="sec4" class="sec">
+        <h3>Welcome To Haedeun</h3>
+        <h2>진료 시간 및 과목</h2>
+
+        <div class="time">
+            <!-- 시간표 -->
+            <h4>진료 시간표</h4>
+            <table id="time">
+                <tr>
+                    <th>평일</th>
+                    <td>오전 9시 - 오후 6시</td>
+                </tr>
+                <tr>
+                    <th>화 & 목</th>
+                    <td>오전 9시 - 오후 8시 (야간진료)</td>
+                </tr>
+                <tr>
+                    <th>토</th>
+                    <td>오전 8시 - 오후 1시</td>
+                </tr>
+                <tr>
+                    <th>일, 공휴일</th>
+                    <td>휴진</td>
+                </tr>
+                <tr>
+                    <th>점심시간</th>
+                    <td>오후 1시 - 오후 2시</td>
+                </tr>    
+            </table>
+            <h5>
+                문의 : 031-157-1187 <br>
+                E-mail : heineuro24@gmail.com
+            </h5>
+        </div>
+
+        <div class="right">
+            <h4>진료 과목</h4>
+            <ul class="specialty">
+                <li>
+                    <span class="tt">뇌신경 클리닉</span>
+                    두통/어지럼증
+                    <br>수면클리닉(코골이, 수면무호흡, 수면다원검사)
+                    <br>기억장애(치매검진)/뇌졸중/뇌전증
+                    <br>손떨림/파킨슨/안면마비
+                </li>
+                <li>
+                    <span class="tt">통증 클리닉</span>
+                    각종 신경통증/손발저림
+                    <br>척추통증(목, 허리, 자세교정)
+                    <br>관절통증(어깨, 팔꿈치, 무릎, 발목)
+    
+                </li>
+            </ul>
+
+            <h4>의료진</h4>
+            <ul class="drlist">
+                <li>
+                    <a href="./sub2_doctors.html#section2">
+                        <span class="drname">김해든</span>
+                        <br>신경과 전문의
+                    </a>
+                </li>
+                <li>
+                    <a href="./sub2_doctors.html#section3">
+                        <span class="drname">최서울</span>
+                        <br>신경과 전문의
+                    </a>
+                </li>
+                <li>
+                    <a href="./sub2_doctors.html#section4">
+                        <span class="drname">남미용</span>
+                        <br>내과 전문의
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- ===== footer ===== -->
+<div class="bg_footer">
+    <div id="footer">
+        <img src="../img/logo_nanumgothic_w.png" alt="logo_w" class="foot_logo">
+        <ul id="footmn">
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보취급방침</a></li>
+            <li><a href="#">환자권리장전</a></li>
+            <li><a href="#">비급여수가표</a></li>
+        </ul>
+        <h5>경기도 성남시 분당구 대신빌딩 2층 해든 신경과 의원</h5>
+        <h5>TEL : 031-157-1187 / FAX : 031-157-1187</h5>
+    </div>
+</div>
+
+
+
+</body>
+

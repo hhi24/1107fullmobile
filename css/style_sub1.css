@@ -1,0 +1,547 @@
+/* ===== 기본 ===== */
+
+* {padding: 0; margin: 0;}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Pretendard-Regular', sans-serif;
+    font-size: 16px;
+    color: #1F2B6C;
+}
+
+
+a {text-decoration: none; color: inherit;}
+ul {list-style: none;}
+
+
+/* ===== top_s ===== */
+
+#bg_top_s {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 1350px;
+    height: 75px;
+
+    position: fixed;
+    top: 0%;
+    z-index: 10;
+
+    background-color: rgba(255, 255, 255, 0); /* 초기 투명 상태 */
+}
+
+#top_s {
+    box-sizing: border-box;
+    width: 1350px;
+    margin: 0 auto;
+
+    color: #1F2B6C;
+}
+
+.navi h1 {
+    float: left;
+}
+
+.navi h1>a {
+    display: block;
+    box-sizing: border-box;
+    width: 220px;
+    height: 75px;
+    padding-top: 10px;
+}
+
+.navi dl {
+    float: right;
+    box-sizing: border-box;
+    width: 900px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.navi dl dt>a {
+    box-sizing: border-box;
+    display: block;
+    width: 160px;
+    height: 75px;
+
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.navi dl dt>a:hover, .navi dl dt:nth-child(2)  {
+    color: #159EEC;
+}
+
+/* ===== sub_title ===== */
+
+.bg_sub_title {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 1350px;
+    height: 300px;
+
+    background: url(../img/subtitle_sub1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#sub_title {
+    box-sizing: border-box;
+    width: 1350px;
+    margin: 0 auto;
+    height: 100%;
+    padding-top: 105px; /* 상단 navi 높이 */
+    padding-left: 20px;
+}
+
+    #sub_title h5 {
+        font-size: 18px;
+        font-weight: 500;
+        font-style: italic;
+
+        color: rgba(31,43,108,0.7);
+        text-shadow: 
+            -1px -1px 3px rgba(255, 255, 255, 0.7) /*좌상*/,
+            -1px 1px 3px rgba(255, 255, 255, 0.7),
+            1px -1px 3px rgba(255, 255, 255, 0.7),
+            1px 1px 3px rgba(255, 255, 255, 0.7),
+            ;
+
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    #sub_title h1 {
+        font-size: 40px;
+        font-weight: 900;
+        letter-spacing: 10px;
+
+        color: rgba(31,43,108,0.9);
+        text-shadow: 
+            -2px -2px 4px rgba(255, 255, 255, 0.7) /*좌상*/,
+            -2px 2px 4px rgba(255, 255, 255, 0.7),
+            2px -2px 4px rgba(255, 255, 255, 0.7),
+            2px 2px 4px rgba(255, 255, 255, 0.7) /*우하*/
+            ;
+
+        text-align: center;
+        padding-top: 5px;
+    }
+
+
+/* ========== section 구획 ========== */
+.bg_sec {
+    min-width: 1350px;
+    background-color: inherit;
+}
+
+.sec {
+    box-sizing: border-box;
+    width: 1350px;
+    margin: 0 auto;
+    padding: 80px 40px;
+}
+
+.right {
+    box-sizing: border-box;
+    width: 42%;
+    height: 100%;
+}
+
+.left {
+    box-sizing: border-box;
+    width: 42%;
+    height: 100%;
+}
+
+
+/* ===== Type 설정 ===== */
+
+    .sec h3 {
+        /* 부제목 위에 영어 */
+        color: #159EEC;
+        font-family: inherit;
+        font-size: 17px;
+        font-weight: 500;
+        font-style: italic;
+
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: capitalize;
+
+        margin-top: 30px;
+    }
+
+    .sec h2 {
+        /* 부제목 */
+        font-size: 30px;
+        font-weight: 900;
+
+        margin-top: 10px;
+        text-align: center;
+    }
+
+
+/* ===== sec1 ===== */
+
+#sec1 {    
+    display: flex;
+    justify-content: center;
+    background-color: inherit;
+}
+
+  /* == sec1 left == */
+
+    /* swiper */
+    .swiper {
+        width: 480px;
+        height: 480px;
+    }
+
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+    }
+
+    .swiper-slide img {
+        display: block;
+        height: 90%;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+  /* == sec1 right == */
+    #sec1 .right {
+        padding-left: 40px;
+    }
+    #sec1 h3 {
+        text-align: center;
+    }
+    #sec1 h2 {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    #sec1 p {
+        font-size: 16px;
+        font-weight: 500;
+
+        margin-bottom: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+
+/* ===== sec2 ===== */
+
+#sec2 {
+    display: flex;
+    justify-content: center;
+}
+
+  /* == sec2 left == */
+    #sec2 dl {
+        margin-top: 60px;
+        margin-left: 60px;
+        line-height: 30px;
+    }
+    #sec2 dt {
+        margin-top: 15px;
+        font-size: 16px;
+        font-weight: 900;
+    }
+    #sec2 dd {
+        margin-left: 20px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+  /* == sec2 right == */
+    #sec2 .right {
+        position: relative;
+        text-align: center;
+        padding-left: 30px;
+    }
+    #sec2 .right img {
+        height: 480px;
+
+        /*
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        */
+    }
+
+/* ===== sec3 철학 인용문 ===== */
+
+.bg_sec3 {
+    background: url(../img/philo_high.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#sec3 {
+    height: 670px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+
+    color: #FFFFFF;
+}
+
+#sec3 h4 {
+    font-size: 20px;
+    font-weight: 500;
+
+    text-align: center;
+}
+
+#sec3 h1 {
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 48px;
+    letter-spacing: 1px;
+
+    text-align: center;
+}
+
+
+
+/* ===== sec4 ===== */
+
+#sec4 {
+    padding-top: 10px;
+    margin-bottom: 70px;
+
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+  /* == sec4 left == */
+  #sec4 .left {width: 40%;}
+    .time {
+        box-sizing: border-box;
+        height: 580px;
+
+        position: relative;
+    }
+
+    #time{
+        background-color: rgba(191,210,248,0.4);
+        font-size: 18px;
+        
+        border-collapse: separate; 
+        border-spacing: 10px 10px;
+        width: 87%;
+        padding: 50px 20px 60px 20px;
+
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    #time th {
+        text-align: left;
+        padding: 13px 10px 13px 35px; 
+    }
+    #time td {
+        text-align: left;
+        padding: 13px 0 ; 
+    }
+
+    .time h5 {
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 28px;
+
+        width: 87%;
+        margin: 0 auto;
+        margin-top: 20px;
+        padding-left: 10px;
+    }
+
+  /* == sec4 right == */
+  #sec4 .right {width: 50%;}
+
+  #sec4 h4 {
+    font-size: 19px;
+    font-weight: 900;
+
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+    /* == Our Doctors == */
+    .drlist {
+        display: flex;
+        justify-content: space-between;
+
+        margin-bottom: 20px;
+    }
+
+    .drlist li {
+        box-sizing: border-box;
+        width: 200px;
+        height: 280px;
+
+        background-color: rgba(191,210,248,0.4);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: contain;    
+
+        transition: all ease 0.5s;
+    }
+
+        .drlist li:nth-child(1) {background-image: url(../img/doc1.png);}
+        .drlist li:nth-child(2) {background-image: url(../img/doc2.png);}
+        .drlist li:nth-child(3) {background-image: url(../img/doc3.png);}
+
+    .drlist li a {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding-top: 207px;
+        padding-left: 10px;
+
+        color: #1F2B6C;
+        font-size: 17px;
+    }
+
+    .drlist li:hover {
+        background-size: cover;
+        transform: scale(1.03);
+    }
+
+    .drlist li a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+        .drname {
+            line-height: 35px;
+            font-weight: 900;
+        }
+
+    /* == 진료과목 == */
+    .specialty {
+        display: flex;
+        justify-content: space-between;
+
+        font-size: 17px;
+        line-height: 30px;
+        color: #FFFFFF;
+    }
+
+    .specialty li {
+        width: fit-content;
+        padding: 10px 20px 20px 20px;
+        background-color: rgba(31,43,108,0.7);
+    }
+
+        .tt {
+            display: block;
+            box-sizing: border-box;
+            width: 100%;
+            height: 38px;
+            padding-top: 3px;
+            margin-bottom: 7px;
+
+            background-color: #FFFFFF;
+            color: #1F2B6C;
+            font-weight: 600;
+            text-align: center;
+
+        }
+
+
+/* ===== TOP 버튼 스타일 ===== */
+#topButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #159EEC;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* 기본적으로 숨김 처리 */
+    z-index: 1000;
+    transition: opacity 0.3s;
+}
+
+#topButton:hover {
+    background-color: #1F2B6C;
+}
+
+
+
+/* ===== footer ===== */
+
+.bg_footer {
+    width: 100%;
+
+    background-color: #222222;
+    color: #FFFFFF;
+}
+
+#footer {
+    box-sizing: border-box;
+    width: 1350px;
+    margin: 0 auto;
+    height: 250px;
+
+    padding: 40px 0;
+    text-align: center;
+
+    opacity: 80%;
+}
+
+.foot_logo {
+    width: 150px;
+}
+
+#footmn {
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    padding-left: 20px;
+
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#footmn li {
+    font-size: 15px;
+    font-weight: 500;
+}
+    #footmn li:hover {font-weight: 900;}
+
+    #footmn li::after {
+        content: "|";
+        display: inline-block;
+        margin: 0 20px;
+    }
+    #footmn li:last-child::after {
+        content: ""; /* 마지막 항목 뒤에는 선을 표시하지 않음 */
+        margin: 0;
+    }
+
+#footer h5 {
+    font-size: 15px;
+    font-weight: 300;
+
+    margin-top: 10px;
+}
+

@@ -1,0 +1,392 @@
+/* ===== 기본 ===== */
+
+* {padding: 0; margin: 0;}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Pretendard-Regular', sans-serif;
+    color: #1F2B6C;
+}
+
+html, body {
+    position: relative;
+    height: 100%;
+    }
+
+a {text-decoration: none; color: inherit;}
+ul {list-style: none;}
+
+/* ===== Type 설정 ===== */
+
+
+
+/* ===== top_m ===== */
+
+#bg_top_m {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 1350px;
+    height: 75px;
+    background-color: #1F2B6C;
+}
+
+#top_m {
+    box-sizing: border-box;
+    width: 1350px;
+    margin: 0 auto;
+
+    color: #FFFFFF;
+}
+
+.navi h1 {
+    float: left;
+}
+
+.navi h1>a {
+    display: block;
+    box-sizing: border-box;
+    width: 220px;
+    height: 75px;
+    padding-top: 10px;
+}
+
+.navi dl {
+    float: right;
+    box-sizing: border-box;
+    width: 900px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.navi dl dt>a {
+    box-sizing: border-box;
+    display: block;
+    width: 160px;
+    height: 75px;
+
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.navi dl dt>a:hover {
+    color: #F4D35E;
+}
+
+
+/* ===== banner ===== */
+
+    /* Swiper */
+
+    .swiper {
+        width: 100%;
+        height: 83%;
+    }
+
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+    }
+
+    #ban1 {
+        background-image: url(../img/bg_hd4.png);
+    }
+    #ban2 {
+        background-image: url(../img/bg_hd5.png);
+    }
+        #ban2 h1 {color: #FFFFFF;}
+    #ban3 {
+        background-image: url(../img/bg_hd6.png);
+    }
+    #ban4 {
+        background-image: url(../img/bg_hd1.png);
+    }
+        #ban4 h1 {color: #FFFFFF;}
+
+    /* banner */
+    .ban_inbox {
+        position: relative;
+        width: 1350px;
+        margin: 0 auto;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .ban_inbox h2 {
+        position: absolute;
+        top: 32%;
+        left: 10%;
+
+        font-family: inherit;
+        font-style: italic;
+        font-weight: 600;
+        font-size: 28px;
+        color: #159EEC;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+    }
+
+    .ban_inbox h1 {
+        position: absolute;
+        top: 40%;
+        left: 10%;
+
+        font-weight: 900;
+        font-size: 52px;
+        color: #1F2B6C;
+        line-height: 80px;
+    }
+
+
+/* ===== button ===== */
+
+.bg_button {
+    position: absolute;
+    width: 100%;
+    height: 75px;
+    top: 88%;
+    z-index: 9;
+}
+
+.button {
+    box-sizing: border-box;
+    width: 1350px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.button li {
+    width: 300px;
+    background-repeat: no-repeat;
+    background-position: left 20px top 15px;
+
+    /* 박스 꾸미기 */
+    border-radius: 6px; 
+
+    /*
+    box-shadow: inset 1px 1px 3px rgba(29, 29, 27, 0.2),
+    inset -1px -1px 3px rgba(191, 210, 248, 0.4),
+    1px 1px 4px rgba(29, 29, 27, 0.2),
+    -1px -1px 4px rgba(191, 210, 248, 0.4);
+    */
+
+    box-shadow: 2px 2px 4px rgba(29, 29, 27, 0.2)
+
+}
+.button li>a {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 75px;
+
+    /* 버튼 폰트 */
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 28px;
+
+    /* 아이콘 넣을 자리 (43~51 x 43px) */
+    padding-left: 55px;
+
+}
+
+.button li:nth-child(1) {
+    /* 금주 진료 일정 */
+    background-image: url(../img/button_icon_1_navy.png);
+    background-color: #BFD2F8;
+    color: #1F2B6C;
+}
+.button li:nth-child(2) {
+    /* 의료진 진료과목 */
+    background-image: url(../img/button_icon_2_palesky.png);
+    background-color: #1F2B6C;
+    color: #BFD2F8;
+}
+.button li:nth-child(3) {
+    /* 네이버 예약 */
+    background-image: url(../img/button_icon_3.png);
+    background-color: #FFFFFF;
+    color: #1F2B6C;
+}
+
+/* ===== popup ===== */
+
+
+.button {
+    position: relative;
+}
+
+.popup{
+    width: 400px;
+    height: 445px;
+    border: double 8px rgba(31,43,108,1);
+    padding: 20px 15px;
+    
+    position: absolute;
+    top: 0;
+    left: 5%;
+    transform: translate(0, -103%);
+    z-index: 10;
+    
+    background-color:#FFFFFF;
+    }
+
+    .popup h3 {
+        /* 부제목 위에 영어 */
+        color: #159EEC;
+        font-family: inherit;
+        font-size: 14px;
+        font-weight: 500;
+        font-style: italic;
+
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: capitalize;
+
+        margin-top: 10px;
+    }
+
+    .popup h2 {
+        /* 부제목 */
+        font-size: 25px;
+        font-weight: 900;
+
+        margin-top: 5px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+
+
+    /* 시간표 */
+    #time{
+        background-color: rgba(191,210,248,0.4);
+        font-size: 17px;
+        padding: 20px 0;
+        border-collapse: separate; 
+        border-spacing: 0px 7px;
+
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #time th {
+        padding: 10px 0px 10px 60px; 
+        text-align: left;
+    }
+    #time td {
+        padding: 10px 0px 10px 0px; 
+        text-align: left;
+    }
+
+    .popup h5 {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: left;
+        padding-left: 5px;
+
+        margin-top: 10px;
+    }
+        
+    /* 닫기 버튼 */
+    .close{
+        float: right;
+        display: block;
+        width: fit-content;
+        padding: 10px 30px;
+        background-color: #1F2B6C;
+        margin-top: 0px;
+        margin-right: 0px;
+
+        font-size: 17px;
+        color: #FFFFFF;
+
+    }
+    
+    .close:hover{
+        background-color: #159EEC;
+    }
+
+
+/* ===== footer ===== */
+
+.bg_footer {
+    background-color: #222222;
+    width: 100%;
+    position: absolute;
+    top: 100vh;
+}
+
+#footer {
+    height: 150px;
+}
+
+/* ===== footer ===== */
+
+.bg_footer {
+    width: 100%;
+
+    background-color: #222222;
+    color: #FFFFFF;
+}
+
+#footer {
+    box-sizing: border-box;
+    width: 1350px;
+    margin: 0 auto;
+    height: 250px;
+
+    padding: 40px 0;
+    text-align: center;
+
+    opacity: 80%;
+}
+
+.foot_logo {
+    width: 150px;
+}
+
+#footmn {
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    padding-left: 20px;
+
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#footmn li {
+    font-size: 15px;
+    font-weight: 500;
+}
+    #footmn li:hover {font-weight: 900;}
+
+    #footmn li::after {
+        content: "|";
+        display: inline-block;
+        margin: 0 20px;
+    }
+    #footmn li:last-child::after {
+        content: ""; /* 마지막 항목 뒤에는 선을 표시하지 않음 */
+        margin: 0;
+    }
+
+#footer h5 {
+    font-size: 15px;
+    font-weight: 300;
+
+    margin-top: 10px;
+}
+

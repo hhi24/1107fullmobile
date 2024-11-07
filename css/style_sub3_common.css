@@ -1,0 +1,234 @@
+/* ===== 기본 ===== */
+
+* {padding: 0; margin: 0;}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Pretendard-Regular', sans-serif;
+    color: #1F2B6C;
+}
+
+
+a {text-decoration: none; color: inherit;}
+ul {list-style: none;}
+
+/* ===== Type 설정 ===== */
+    h1 {
+        font-size: 36px;
+        font-weight: 900;
+    }
+
+
+    h2 {
+        /* 부제목 */
+        font-size: 32px;
+        font-weight: 600;
+
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    h3 {
+        /* 부제목 위에 영어 */
+        color: #159EEC;
+        font-family: inherit;
+        font-size: 18px;
+        font-weight: 500;
+        font-style: italic;
+
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: capitalize;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+/* ===== top_m ===== */
+
+
+#bg_top_m {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 1350px;
+    height: 75px;
+    background-color: #1F2B6C;
+}
+
+#top_m {
+    box-sizing: border-box;
+    width: 1350px;
+    margin: 0 auto;
+
+    color: #FFFFFF;
+}
+
+
+.navi h1 {
+    float: left;
+}
+
+.navi h1>a {
+    display: block;
+    box-sizing: border-box;
+    width: 220px;
+    height: 75px;
+    padding-top: 10px;
+}
+
+.navi dl {
+    float: right;
+    box-sizing: border-box;
+    width: 900px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.navi dl dt>a {
+    box-sizing: border-box;
+    display: block;
+    width: 160px;
+    height: 75px;
+
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.navi dl dt>a:hover, .navi dl dt:nth-child(4) {
+    color: #F4D35E;
+}
+
+
+/* ========== disease ========== */
+.bg_submenu {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 1350px;
+    height: 60px;
+
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+
+    background-color: rgba(191,210,248,0.7);
+}
+
+.submenu {
+    box-sizing: border-box;
+    width: 1350px;
+    margin: 0 auto;
+
+    color: #1F2B6C;
+}
+
+.submenu ul {
+    text-align: right;
+}
+.submenu ul li {
+    display: inline-block;
+}
+.submenu ul li a {
+    box-sizing: border-box;
+    display: block;
+    width: 160px;
+    height: 60px;
+
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 17px;
+}
+
+.submenu ul li:hover {
+    color: #FF6F61;
+}
+
+
+
+/* ========== section 구획 ========== */
+.bg_sec {
+    min-width: 1350px;
+}
+
+    .bg_sec2 {background-color: gainsboro;}
+
+.sec {
+    box-sizing: border-box;
+    width: 1350px;
+    margin: 0 auto;
+    height: 800px;
+    padding: 40px 40px;
+}
+
+.right {
+    box-sizing: border-box;
+    width: 600px;
+    background-color: gainsboro;
+}
+
+.left {
+    box-sizing: border-box;
+    width: 600px;
+    background-color: gainsboro;
+}
+
+
+/* contents */
+
+.yout_box {
+    box-sizing: border-box;
+    width: 700px;
+    margin-top: 20px;
+}
+
+.poster_box {
+    box-sizing: border-box;
+    width: 700px;
+    height: 700px;
+}
+
+    .poster_box img {
+        height: 100%;
+    }
+
+/* ===== TOP 버튼 스타일 ===== */
+#topButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #159EEC;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#topButton:hover {
+    background-color: #1F2B6C;
+}
+
+
+
+/* ===== footer ===== */
+
+.bg_footer {
+    background-color: #222222;
+    width: 100%;
+}
+
+#footer {
+    height: 150px;
+}

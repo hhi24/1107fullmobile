@@ -1,0 +1,438 @@
+/* ===== 기본 ===== */
+
+* {padding: 0; margin: 0;}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Pretendard-Regular', sans-serif;
+    font-size: 16px;
+    color: #1F2B6C;
+}
+
+
+a {text-decoration: none; color: inherit;}
+ul {list-style: none;}
+
+
+/* ===== top_s ===== */
+
+#bg_top_s {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 1350px;
+    height: 75px;
+
+    position: fixed;
+    top: 0%;
+    z-index: 10;
+
+    background-color: rgba(255, 255, 255, 0); /* 초기 투명 상태 */
+}
+
+#top_s {
+    box-sizing: border-box;
+    width: 1350px;
+    margin: 0 auto;
+
+    color: #1F2B6C;
+}
+
+.navi h1 {
+    float: left;
+}
+
+.navi h1>a {
+    display: block;
+    box-sizing: border-box;
+    width: 220px;
+    height: 75px;
+    padding-top: 10px;
+}
+
+.navi dl {
+    float: right;
+    box-sizing: border-box;
+    width: 900px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.navi dl dt>a {
+    box-sizing: border-box;
+    display: block;
+    width: 160px;
+    height: 75px;
+
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.navi dl dt>a:hover, .navi dl dt:nth-child(5)  {
+    color: #159EEC;
+}
+
+/* ===== sub_title ===== */
+
+.bg_sub_title {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 1350px;
+    height: 300px;
+
+    background: url(../img/subtitle_sub1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#sub_title {
+    box-sizing: border-box;
+    width: 1350px;
+    margin: 0 auto;
+    height: 100%;
+    padding-top: 105px; /* 상단 navi 높이 */
+    padding-left: 20px;
+}
+
+    #sub_title h5 {
+        font-size: 18px;
+        font-weight: 500;
+        font-style: italic;
+
+        color: rgba(31,43,108,0.7);
+        text-shadow: 
+            -1px -1px 3px rgba(255, 255, 255, 0.7) /*좌상*/,
+            -1px 1px 3px rgba(255, 255, 255, 0.7),
+            1px -1px 3px rgba(255, 255, 255, 0.7),
+            1px 1px 3px rgba(255, 255, 255, 0.7),
+            ;
+
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    #sub_title h1 {
+        font-size: 40px;
+        font-weight: 900;
+        letter-spacing: 10px;
+
+        color: rgba(31,43,108,0.9);
+        text-shadow: 
+            -2px -2px 4px rgba(255, 255, 255, 0.7) /*좌상*/,
+            -2px 2px 4px rgba(255, 255, 255, 0.7),
+            2px -2px 4px rgba(255, 255, 255, 0.7),
+            2px 2px 4px rgba(255, 255, 255, 0.7) /*우하*/
+            ;
+
+        text-align: center;
+        padding-top: 5px;
+    }
+
+
+/* ========== section 구획 ========== */
+.bg_sec {
+    min-width: 1350px;
+    background-color: inherit;
+}
+
+
+.sec {
+    box-sizing: border-box;
+    width: 1350px;
+    margin: 0 auto;
+    padding: 30px 40px;
+}
+
+
+/* ===== Type 설정 ===== */
+
+    .sec h3 {
+        /* 부제목 위에 영어 */
+        color: #159EEC;
+        font-family: inherit;
+        font-size: 17px;
+        font-weight: 500;
+        font-style: italic;
+
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: capitalize;
+
+        margin-top: 30px;
+        margin-left: 3%;
+    }
+
+    .sec h2 {
+        /* 부제목 */
+        font-size: 30px;
+        font-weight: 900;
+
+        margin-top: 10px;
+        margin-left: 3%;
+
+        text-align: center;
+    }
+
+/* ===== sec1 ===== */
+#sec1 {
+    padding-top: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#sec1 h3 {width: 100%;}
+#sec1 h2 {width: 100%; margin-bottom: 50px;}
+
+  /* == sec1 left : map width 45% == */
+
+  /* == sec1 right == */
+  #sec1 .right {width: 40%;}
+
+    #sec1 h4 {
+        font-size: 20px;
+        font-weight: 700;
+        text-align: left;
+
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    #sec1 h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    }
+
+    #sec1 p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 15px;
+
+    }
+
+
+
+/* ===== (sub1 sec4에서 갖고와서 수정) ===== */
+
+#sec4 {
+    margin-bottom: 120px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#sec4 h3 {width: 100%;}
+#sec4 h2 {width: 100%; margin-bottom: 20px;}
+
+#sec4 h4 {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    
+    margin-top: 30px;
+    margin-bottom: 23px;
+}
+
+
+  /* == sec4 left == */
+
+    /* 진료시간 */
+    .time {
+        box-sizing: border-box;
+        width: 38%;
+        height: 580px;
+
+        position: relative;
+    }
+
+    #time{
+        background-color: rgba(191,210,248,0.4);
+        font-size: 18px;
+        
+        border-collapse: separate; 
+        border-spacing: 10px 10px;
+        width: 100%;
+        padding: 50px 20px 60px 20px;
+    }
+
+    #time th {
+        text-align: left;
+        padding: 13px 10px 13px 35px; 
+    }
+    #time td {
+        text-align: left;
+        padding: 13px 0 ; 
+    }
+
+    .time h5 {
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 28px;
+
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 20px;
+        padding-left: 5px;
+    }
+
+  /* == sec4 right == */
+  #sec4 .right {width: 52%;}
+
+
+    /* == 진료과목 == */
+    .specialty {
+        display: flex;
+        justify-content: space-between;
+
+        font-size: 17px;
+        line-height: 30px;
+        color: #FFFFFF;
+    }
+
+    .specialty li {
+        width: fit-content;
+        padding: 10px 20px 20px 20px;
+        background-color: rgba(31,43,108,0.7);
+    }
+
+    .specialty li:nth-child(2) {
+        width: 38%;
+    }
+
+        .tt {
+            display: block;
+            box-sizing: border-box;
+            width: 100%;
+            height: 38px;
+            padding-top: 3px;
+            margin-bottom: 7px;
+
+            background-color: #FFFFFF;
+            color: #1F2B6C;
+            font-weight: 600;
+            text-align: center;
+
+        }
+
+    /* == Our Doctors == */
+    .drlist {
+        display: flex;
+        justify-content: space-between;
+
+        margin-bottom: 20px;
+    }
+
+    .drlist li {
+        box-sizing: border-box;
+        width: 200px;
+        height: 280px;
+
+        background-color: rgba(191,210,248,0.4);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: contain;    
+
+        transition: all ease 0.5s;
+    }
+
+        .drlist li:nth-child(1) {background-image: url(../img/doc1.png);}
+        .drlist li:nth-child(2) {background-image: url(../img/doc2.png);}
+        .drlist li:nth-child(3) {background-image: url(../img/doc3.png);}
+
+    .drlist li a {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding-top: 207px;
+        padding-left: 10px;
+
+        color: #1F2B6C;
+        font-size: 17px;
+    }
+
+    .drlist li:hover {
+        background-size: cover;
+        transform: scale(1.03);
+    }
+
+    .drlist li a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+        .drname {
+            line-height: 35px;
+            font-weight: 900;
+        }
+
+
+/* ===== footer ===== */
+
+.bg_footer {
+    width: 100%;
+
+    background-color: #222222;
+    color: #FFFFFF;
+}
+
+#footer {
+    box-sizing: border-box;
+    width: 1350px;
+    margin: 0 auto;
+    height: 250px;
+
+    padding: 40px 0;
+    text-align: center;
+
+    opacity: 80%;
+}
+
+.foot_logo {
+    width: 150px;
+}
+
+#footmn {
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    padding-left: 20px;
+
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#footmn li {
+    font-size: 15px;
+    font-weight: 500;
+}
+    #footmn li:hover {font-weight: 900;}
+
+    #footmn li::after {
+        content: "|";
+        display: inline-block;
+        margin: 0 20px;
+    }
+    #footmn li:last-child::after {
+        content: ""; /* 마지막 항목 뒤에는 선을 표시하지 않음 */
+        margin: 0;
+    }
+
+#footer h5 {
+    font-size: 15px;
+    font-weight: 300;
+
+    margin-top: 10px;
+}
+
